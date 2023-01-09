@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
+<div class="photo-gallery">
+    <div class="container">
+        <div class="intro">
+            <h3>
+                Karen Stepanyan Artwork
+            </h3>
+            <p class="subtext">
+                All artwork shown are made original by Karen Stepanyan.
+            </p>
+        </div>
+        <div class="row photos">
+            <div class="col-sm-6 col-md-4 col-lg-3 item">
+                <a href="{{ url_for('static', filename='../static/images/test.jpg') }}" data-lightbox="photos" 
+                data-title="Dialogue. This artwork represents the freedom of choice in life. Inspired by the colors of the Finnish winter. Digital.">
+                <img class="img-fluid" src="{{ url_for('static', filename='../static/images/test.jpg') }}">
+            </a>
+        </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item">
+                <a href="{{ url_for('static', filename='../static/images/test2.jpg') }}" data-lightbox="photos" 
+                data-title="Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                ex ea commodo consequat. Duis aute irure dolor in 
+                reprehenderit in voluptate velit esse cillum dolore eu 
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+                proident, sunt in culpa qui officia deserunt mollit anim id est 
+                laborum.">
+                <img class="img-fluid" src="{{ url_for('static', filename='../static/images/test2.jpg') }}">
+            </a>
+        </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item">
+                <a href="{{ url_for('static', filename='../static/images/test3.jpg') }}" 
+                data-lightbox="photos">
+                <img class="img-fluid" src="{{ url_for('static', filename='../static/images/test3.jpg') }}">
+            </a>
+        </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item">
+                <a href="{{ url_for('static', filename='../static/images/test4.jpg') }}" data-lightbox="photos">
+                    <img class="img-fluid" src="{{ url_for('static', filename='../static/images/test4.jpg') }}">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item">
+                <a href="{{ url_for('static', filename='../static/images/test5.jpg') }}" data-lightbox="photos">
+                    <img class="img-fluid" src="{{ url_for('static', filename='../static/images/test5.jpg') }}">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+{% endblock %}
