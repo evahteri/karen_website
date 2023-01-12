@@ -2,30 +2,46 @@
 
 
 {% block content %}
-<div class="col-8">
-    <h3>Who am I</h3>
+<div class="row">
+
+    <div class="col-sm-8 col-md-5 col-lg-4">
+        <h4>From the Author</h4>
+            <p>
+                Welcome to my online book on contemporary abstract art! I am thrilled to have the opportunity to share 
+                with you my collection of abstract artworks, each one a unique and thought-provoking expression of my artistic vision. <br> <br> 
+
+                As the creator and owner of these works, I have had the privilege of exploring the endless possibilities of abstract art, 
+                and of expressing my emotions, ideas, and experiences through color, line, shape, and texture. Whether through bold brushstrokes, 
+                subtle gradations, or intricate patterns, my artworks invite you to delve into their depths and discover their hidden meanings and emotions. <br> <br>
+                
+                Contemporary abstract art is a vibrant and constantly evolving field, and I have always been drawn to its ability to challenge 
+                our preconceived notions of what art is, and to express ideas and emotions in a way that is both universal and deeply personal. 
+                My artworks are a testament to this power and potential, and I hope that they will inspire you to look at abstract art in a new light, 
+                and to appreciate its beauty and significance. <br> <br>
+                
+                In this web page, you will find a selection of my most recent abstract artworks, created during the year 2022. 
+                Each one is a unique and highly personal expression of my artistic vision, 
+                and I hope that they will speak to you on a deep and meaningful level. 
+                Thank you for joining me on this journey of artistic exploration and expression, and I hope that you will find as much joy and inspiration in these works as I have. <br> <br>
+                - Karen
+        </p>
+    </div>
+    <div class="col-sm-4 col-md-3 col-lg-2">
+        <img class="img-fluid rounded" src="{{ url_for('static', filename='../static/images/karen.jpg') }}">
+    </div>
+    <div class="col-sm-4 col-md-3 col-lg-2">
+        <h4>
+            Contact me
+        </h4>
         <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-        ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-        quis nostrud exercitation ullamco laboris nisi ut aliquip 
-        ex ea commodo consequat. Duis aute irure dolor in 
-        reprehenderit in voluptate velit esse cillum dolore eu 
-        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-        proident, sunt in culpa qui officia deserunt mollit anim id est 
-        laborum.
-    </p>
-</div>
-<div class="col-4">
-    <h3>
-        Contact me
-    </h3>
-    <p>
-        Email
-        <br>
-        <a href="https://www.instagram.com/karen.stepanyan/" style="color: #444;">Instagram</a>
-        <br>
-    </p>
-    
+            fi.karen.stepanyan@gmail.com
+            <br>
+            <a href="https://www.instagram.com/karen.stepanyan/" style="color: #444;">Instagram</a>
+            <br>
+        </p>
+        
+    </div>
+
 </div>
 
 

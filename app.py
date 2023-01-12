@@ -1,7 +1,6 @@
 from flask import Flask
-from flask import redirect, render_template
-from flask_sqlalchemy import SQLAlchemy
-from os import getenv
+from flask import render_template
+
 
 app = Flask(__name__)
 
